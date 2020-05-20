@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu__items">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contactanos</a></li>
+            
+        </ul>
+    </nav>
+    <div class="pdf__navigation" id="pdfnavigation">
+        <div>                
+            <button class="pdf__navigation-previous" id="prev">&lt;</button>
+            <span class="pdf__navigation-page" id="pdfnavigationpage">Página: <span id="page_num"></span> / <span id="page_count"></span></span>
+            <button class="pdf__navigation-next" id="next">&gt;</button>     
+        </div>
+        <div class="pdf_zoom" id="morezoom">
+            +
+        </div> 
+        <div class="pdf_zoom" id="lesszoom">
+            -
+        </div>
+        <div class="darkmodebtn" id="darkMode">Modo obscuro</div>       
+    </div>
+    <div>
+        <canvas id="the-canvas"></canvas>
+    </div>
+        
+  
+    
+      
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
