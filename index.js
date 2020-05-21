@@ -1,11 +1,12 @@
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://openlibra.com/es/book/download/el-hombre-que-plantaba-arboles';
+var url = 'ejemplo.pdf';
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
+PDFJS.disableWorker = true
 //pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
 
 var pdfDoc = null,
