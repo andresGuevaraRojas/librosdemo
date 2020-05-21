@@ -6,7 +6,7 @@ var url = 'ejemplo.pdf';
 var pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-PDFJS.disableWorker = true
+pdfjsLib.disableWorker = true
 //pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
 
 var pdfDoc = null,
